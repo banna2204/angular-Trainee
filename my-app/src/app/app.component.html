@@ -19,3 +19,28 @@
 
 <app-child-component *ngIf="isVisible" [message]="message">
 </app-child-component>
+
+
+
+
+<!-- *ngFor(fruit of fruits){
+  <div>fruit</div>
+  } -->
+  
+
+  <br>
+  <br>
+<input  type="text"  (input)="handleInputFruit($event)">
+<!-- <button (click)="handleClickFruit()">filter</button> -->
+
+
+<div *ngFor="let fruit of newFruits">
+  {{fruit}}
+</div>
+
+
+<app-event-binding></app-event-binding>
+
+<app-parent-component></app-parent-component>
+
+<app-user-action></app-user-action>

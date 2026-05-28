@@ -1,0 +1,13 @@
+<p>event-binding works!</p>
+
+<input (keyup)="onKey($event)" placeholder="enter key"/>
+
+<input (keydown)="onKeyDown($event)" placeholder="enter key"/>
+
+<button (keyup.enter)="onKeyEnter()">press enter to save</button>
+
+
+<input [ngModel]="username" type="text" >
+
+<input [(ngModel)]="email" type="text"/>
+<span>{{email}}</span>
