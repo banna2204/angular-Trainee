@@ -1,0 +1,21 @@
+{{ user }}
+
+
+<img width="100" [src]="imageUrl" />
+
+<button (click)="handleClick()" [disabled]="isValid">save</button>
+
+<button (click)="toggleDisable()">Toggle Disable</button>
+
+<input
+  type="text"  placeholder="Enter name" 
+  (input)="handleInput($event)"
+  [(ngModel)]="user"
+/>
+
+<button (click)="toggleChild()">
+  {{ isVisible ? 'Hide' : 'Show' }} Child
+</button>
+
+<app-child-component *ngIf="isVisible" [message]="message">
+</app-child-component>
