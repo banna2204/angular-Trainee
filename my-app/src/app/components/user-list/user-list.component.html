@@ -1,0 +1,6 @@
+<p>user-list works!</p>
+
+<div *ngFor="let user of users; let i = index">
+    <span>{{user}}</span> 
+    <button (click)="editUser(user,i)">edit user</button>
+</div>

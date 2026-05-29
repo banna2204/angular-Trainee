@@ -1,0 +1,6 @@
+<p>user-action works!</p>
+<input  type="text" placeholder="enter name" [(ngModel)]="user" />
+
+<button (click)="isEdit?updateUser():addUser()">{{isEdit?'updateUser':'addUser'}}</button>
+
+<app-user-list [users]="users" (eventemit)="getUserForEdit($event)"></app-user-list>
