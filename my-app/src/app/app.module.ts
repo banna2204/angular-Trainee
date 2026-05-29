@@ -11,6 +11,9 @@ import { ParentComponentComponent } from './components/parent-component/parent-c
 import { Child2ComponentComponent } from './components/child2-component/child2-component.component';
 import { UserActionComponent } from './components/user-action/user-action.component';
 import { UserListComponent } from './components/user-list/user-list.component';
+import { DomAccessComponent } from './components/dom-access/dom-access.component';
+import { DomAccessChildComponent } from './components/dom-access-child/dom-access-child.component';
+import { LifeCycleComponent } from './components/life-cycle/life-cycle.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { UserListComponent } from './components/user-list/user-list.component';
     ParentComponentComponent,
     Child2ComponentComponent,
     UserActionComponent,
-    UserListComponent
+    UserListComponent,
+    DomAccessComponent,
+    DomAccessChildComponent,
+    LifeCycleComponent
   ],
   imports: [
     BrowserModule,
