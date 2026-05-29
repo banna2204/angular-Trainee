@@ -1,0 +1,9 @@
+<p>parent-component works!</p>
+<app-child2-component [message]="message"  (eventEmit)="getData($event)"></app-child2-component>
+<div *ngFor="let fruit of recievedFruit">
+    <span>
+         {{fruit}}
+    </span>
+</div>
+
+

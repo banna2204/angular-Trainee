@@ -37,10 +37,10 @@ export class AppComponent {
     this.user = inputElement.value;
   }
 
-  ngOnInit(){
-    this.products = this.ProductService.getProduct();
-    console.log(this.products);
-  }
+  // ngOnInit(){
+  //   this.products = this.ProductService.getProduct();
+  //   console.log(this.products);
+  // }
 
   isVisible:boolean = false; 
 
@@ -48,4 +48,17 @@ export class AppComponent {
     this.isVisible = !this.isVisible;
   }
 
+  
+  fruits = ['apple','ananas','mango','banana','paynapal'];
+  newFruits=this.fruits;
+  // handleClickFruit(){
+    //   this.newFruits = this.fruits.filter((fruit:string)=>fruit.includes(this.inputFruit));
+    // }
+    
+    inputFruit="";
+    handleInputFruit(event:Event){
+    const inputElement = event.target as HTMLInputElement;
+    this.inputFruit = inputElement.value;
+    this.newFruits = this.fruits.filter((fruit:string)=>fruit.includes(this.inputFruit.trim()));
+  }
 }

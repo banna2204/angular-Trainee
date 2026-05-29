@@ -6,11 +6,27 @@ import { AppComponent } from './app.component';
 import { ChildComponentComponent } from './components/child-component/child-component.component';
 import { FormsModule } from '@angular/forms';
 import { ProductServiceService } from './productService/product.service.service';
+import { EventBindingComponent } from './components/event-binding/event-binding.component';
+import { ParentComponentComponent } from './components/parent-component/parent-component.component';
+import { Child2ComponentComponent } from './components/child2-component/child2-component.component';
+import { UserActionComponent } from './components/user-action/user-action.component';
+import { UserListComponent } from './components/user-list/user-list.component';
+import { DomAccessComponent } from './components/dom-access/dom-access.component';
+import { DomAccessChildComponent } from './components/dom-access-child/dom-access-child.component';
+import { LifeCycleComponent } from './components/life-cycle/life-cycle.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ChildComponentComponent
+    ChildComponentComponent,
+    EventBindingComponent,
+    ParentComponentComponent,
+    Child2ComponentComponent,
+    UserActionComponent,
+    UserListComponent,
+    DomAccessComponent,
+    DomAccessChildComponent,
+    LifeCycleComponent
   ],
   imports: [
     BrowserModule,
